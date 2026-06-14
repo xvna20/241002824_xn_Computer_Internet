@@ -1,0 +1,87 @@
+[2026-06-13 23:43:53.470] Client: 发送 SYN | StudentID=20788 | MsgType=1 | SeqNum=0 | AckNum=0 | DataLen=0 | Flags=SYN
+[2026-06-13 23:43:53.477] Client: 收到 SYN-ACK | StudentID=20788 | MsgType=1 | SeqNum=0 | AckNum=1 | DataLen=0 | Flags=SYN+ACK
+[2026-06-13 23:43:53.477] Client: 发送 ACK | StudentID=20788 | MsgType=1 | SeqNum=1 | AckNum=1 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.478] Client: 三次握手完成，连接已建立
+[2026-06-13 23:43:53.479] Client: 客户端启动，开始连接服务端
+[2026-06-13 23:43:53.479] Client: 发送数据包 | Seq=1 | StudentID=20788 | MsgType=2 | SeqNum=1 | AckNum=0 | DataLen=56 | Flags=0 | D*56
+[2026-06-13 23:43:53.480] Client: 发送数据包 | Seq=2 | StudentID=20788 | MsgType=2 | SeqNum=2 | AckNum=0 | DataLen=50 | Flags=0 | D*50
+[2026-06-13 23:43:53.480] Client: 发送数据包 | Seq=3 | StudentID=20788 | MsgType=2 | SeqNum=3 | AckNum=0 | DataLen=79 | Flags=0 | D*79
+[2026-06-13 23:43:53.481] Client: 发送数据包 | Seq=4 | StudentID=20788 | MsgType=2 | SeqNum=4 | AckNum=0 | DataLen=47 | Flags=0 | D*47
+[2026-06-13 23:43:53.482] Client: 发送数据包 | Seq=5 | StudentID=20788 | MsgType=2 | SeqNum=5 | AckNum=0 | DataLen=65 | Flags=0 | D*65
+[2026-06-13 23:43:53.504] Client: 收到 ACK | Seq=1 | RTT=23.93ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=1 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.505] Client: 发送数据包 | Seq=6 | StudentID=20788 | MsgType=2 | SeqNum=6 | AckNum=0 | DataLen=76 | Flags=0 | D*76
+[2026-06-13 23:43:53.527] Client: 收到 ACK | Seq=2 | RTT=44.79ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=2 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.531] Client: 发送数据包 | Seq=7 | StudentID=20788 | MsgType=2 | SeqNum=7 | AckNum=0 | DataLen=63 | Flags=0 | D*63
+[2026-06-13 23:43:53.556] Client: 收到 ACK | Seq=3 | RTT=74.78ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=3 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.558] Client: 发送数据包 | Seq=8 | StudentID=20788 | MsgType=2 | SeqNum=8 | AckNum=0 | DataLen=58 | Flags=0 | D*58
+[2026-06-13 23:43:53.594] Client: 收到 ACK | Seq=4 | RTT=112.25ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=4 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.595] Client: 发送数据包 | Seq=9 | StudentID=20788 | MsgType=2 | SeqNum=9 | AckNum=0 | DataLen=79 | Flags=0 | D*79
+[2026-06-13 23:43:53.899] Client: 超时重传 | base=5 | next_seq=10
+[2026-06-13 23:43:53.899] Client: 重传 | Seq=5 | StudentID=20788 | MsgType=2 | SeqNum=5 | AckNum=0 | DataLen=65 | Flags=0 | D*65
+[2026-06-13 23:43:53.900] Client: 重传 | Seq=6 | StudentID=20788 | MsgType=2 | SeqNum=6 | AckNum=0 | DataLen=76 | Flags=0 | D*76
+[2026-06-13 23:43:53.900] Client: 重传 | Seq=7 | StudentID=20788 | MsgType=2 | SeqNum=7 | AckNum=0 | DataLen=63 | Flags=0 | D*63
+[2026-06-13 23:43:53.902] Client: 重传 | Seq=8 | StudentID=20788 | MsgType=2 | SeqNum=8 | AckNum=0 | DataLen=58 | Flags=0 | D*58
+[2026-06-13 23:43:53.903] Client: 重传 | Seq=9 | StudentID=20788 | MsgType=2 | SeqNum=9 | AckNum=0 | DataLen=79 | Flags=0 | D*79
+[2026-06-13 23:43:54.212] Client: 超时重传 | base=5 | next_seq=10
+[2026-06-13 23:43:54.214] Client: 重传 | Seq=5 | StudentID=20788 | MsgType=2 | SeqNum=5 | AckNum=0 | DataLen=65 | Flags=0 | D*65
+[2026-06-13 23:43:54.216] Client: 重传 | Seq=6 | StudentID=20788 | MsgType=2 | SeqNum=6 | AckNum=0 | DataLen=76 | Flags=0 | D*76
+[2026-06-13 23:43:54.218] Client: 重传 | Seq=7 | StudentID=20788 | MsgType=2 | SeqNum=7 | AckNum=0 | DataLen=63 | Flags=0 | D*63
+[2026-06-13 23:43:54.219] Client: 重传 | Seq=8 | StudentID=20788 | MsgType=2 | SeqNum=8 | AckNum=0 | DataLen=58 | Flags=0 | D*58
+[2026-06-13 23:43:54.221] Client: 重传 | Seq=9 | StudentID=20788 | MsgType=2 | SeqNum=9 | AckNum=0 | DataLen=79 | Flags=0 | D*79
+[2026-06-13 23:43:54.233] Client: 收到 ACK | Seq=5 | RTT=17.45ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=5 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.235] Client: 发送数据包 | Seq=10 | StudentID=20788 | MsgType=2 | SeqNum=10 | AckNum=0 | DataLen=60 | Flags=0 | D*60
+[2026-06-13 23:43:54.269] Client: 收到 ACK | Seq=6 | RTT=51.39ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=6 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.270] Client: 发送数据包 | Seq=11 | StudentID=20788 | MsgType=2 | SeqNum=11 | AckNum=0 | DataLen=51 | Flags=0 | D*51
+[2026-06-13 23:43:54.288] Client: 收到 ACK | Seq=7 | RTT=68.06ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=7 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.291] Client: 发送数据包 | Seq=12 | StudentID=20788 | MsgType=2 | SeqNum=12 | AckNum=0 | DataLen=47 | Flags=0 | D*47
+[2026-06-13 23:43:54.301] Client: 收到 ACK | Seq=8 | RTT=78.87ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=8 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.302] Client: 发送数据包 | Seq=13 | StudentID=20788 | MsgType=2 | SeqNum=13 | AckNum=0 | DataLen=51 | Flags=0 | D*51
+[2026-06-13 23:43:54.314] Client: 收到 ACK | Seq=9 | RTT=91.46ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=9 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.318] Client: 发送数据包 | Seq=14 | StudentID=20788 | MsgType=2 | SeqNum=14 | AckNum=0 | DataLen=42 | Flags=0 | D*42
+[2026-06-13 23:43:54.361] Client: 收到 ACK | Seq=10 | RTT=124.12ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=10 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.364] Client: 发送数据包 | Seq=15 | StudentID=20788 | MsgType=2 | SeqNum=15 | AckNum=0 | DataLen=50 | Flags=0 | D*50
+[2026-06-13 23:43:54.391] Client: 收到 ACK | Seq=11 | RTT=119.77ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=11 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.395] Client: 发送数据包 | Seq=16 | StudentID=20788 | MsgType=2 | SeqNum=16 | AckNum=0 | DataLen=68 | Flags=0 | D*68
+[2026-06-13 23:43:54.401] Client: 收到 ACK | Seq=12 | RTT=109.2ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=12 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.402] Client: 发送数据包 | Seq=17 | StudentID=20788 | MsgType=2 | SeqNum=17 | AckNum=0 | DataLen=76 | Flags=0 | D*76
+[2026-06-13 23:43:54.421] Client: 收到 ACK | Seq=13 | RTT=118.66ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=13 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.422] Client: 发送数据包 | Seq=18 | StudentID=20788 | MsgType=2 | SeqNum=18 | AckNum=0 | DataLen=68 | Flags=0 | D*68
+[2026-06-13 23:43:54.735] Client: 超时重传 | base=14 | next_seq=19
+[2026-06-13 23:43:54.735] Client: 重传 | Seq=14 | StudentID=20788 | MsgType=2 | SeqNum=14 | AckNum=0 | DataLen=42 | Flags=0 | D*42
+[2026-06-13 23:43:54.736] Client: 重传 | Seq=15 | StudentID=20788 | MsgType=2 | SeqNum=15 | AckNum=0 | DataLen=50 | Flags=0 | D*50
+[2026-06-13 23:43:54.736] Client: 重传 | Seq=16 | StudentID=20788 | MsgType=2 | SeqNum=16 | AckNum=0 | DataLen=68 | Flags=0 | D*68
+[2026-06-13 23:43:54.736] Client: 重传 | Seq=17 | StudentID=20788 | MsgType=2 | SeqNum=17 | AckNum=0 | DataLen=76 | Flags=0 | D*76
+[2026-06-13 23:43:54.737] Client: 重传 | Seq=18 | StudentID=20788 | MsgType=2 | SeqNum=18 | AckNum=0 | DataLen=68 | Flags=0 | D*68
+[2026-06-13 23:43:54.746] Client: 收到 ACK | Seq=14 | RTT=9.82ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=14 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.746] Client: 发送数据包 | Seq=19 | StudentID=20788 | MsgType=2 | SeqNum=19 | AckNum=0 | DataLen=70 | Flags=0 | D*70
+[2026-06-13 23:43:54.777] Client: 收到 ACK | Seq=15 | RTT=41.03ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=15 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.778] Client: 发送数据包 | Seq=20 | StudentID=20788 | MsgType=2 | SeqNum=20 | AckNum=0 | DataLen=40 | Flags=0 | D*40
+[2026-06-13 23:43:54.795] Client: 收到 ACK | Seq=16 | RTT=58.3ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=16 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.796] Client: 发送数据包 | Seq=21 | StudentID=20788 | MsgType=2 | SeqNum=21 | AckNum=0 | DataLen=43 | Flags=0 | D*43
+[2026-06-13 23:43:54.819] Client: 收到 ACK | Seq=17 | RTT=82.06ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=17 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.821] Client: 发送数据包 | Seq=22 | StudentID=20788 | MsgType=2 | SeqNum=22 | AckNum=0 | DataLen=42 | Flags=0 | D*42
+[2026-06-13 23:43:54.845] Client: 收到 ACK | Seq=18 | RTT=106.7ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=18 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.846] Client: 发送数据包 | Seq=23 | StudentID=20788 | MsgType=2 | SeqNum=23 | AckNum=0 | DataLen=55 | Flags=0 | D*55
+[2026-06-13 23:43:54.862] Client: 收到 ACK | Seq=19 | RTT=115.63ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=19 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.863] Client: 发送数据包 | Seq=24 | StudentID=20788 | MsgType=2 | SeqNum=24 | AckNum=0 | DataLen=79 | Flags=0 | D*79
+[2026-06-13 23:43:54.886] Client: 收到 ACK | Seq=20 | RTT=107.56ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=20 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.889] Client: 发送数据包 | Seq=25 | StudentID=20788 | MsgType=2 | SeqNum=25 | AckNum=0 | DataLen=48 | Flags=0 | D*48
+[2026-06-13 23:43:54.910] Client: 收到 ACK | Seq=21 | RTT=112.95ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=21 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.912] Client: 发送数据包 | Seq=26 | StudentID=20788 | MsgType=2 | SeqNum=26 | AckNum=0 | DataLen=48 | Flags=0 | D*48
+[2026-06-13 23:43:54.930] Client: 收到 ACK | Seq=22 | RTT=108.15ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=22 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.932] Client: 发送数据包 | Seq=27 | StudentID=20788 | MsgType=2 | SeqNum=27 | AckNum=0 | DataLen=53 | Flags=0 | D*53
+[2026-06-13 23:43:54.955] Client: 收到 ACK | Seq=23 | RTT=107.71ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=23 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.958] Client: 发送数据包 | Seq=28 | StudentID=20788 | MsgType=2 | SeqNum=28 | AckNum=0 | DataLen=73 | Flags=0 | D*73
+[2026-06-13 23:43:54.979] Client: 收到 ACK | Seq=24 | RTT=115.41ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=24 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.980] Client: 发送数据包 | Seq=29 | StudentID=20788 | MsgType=2 | SeqNum=29 | AckNum=0 | DataLen=55 | Flags=0 | D*55
+[2026-06-13 23:43:55.010] Client: 收到 ACK | Seq=25 | RTT=120.08ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=25 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.012] Client: 发送数据包 | Seq=30 | StudentID=20788 | MsgType=2 | SeqNum=30 | AckNum=0 | DataLen=66 | Flags=0 | D*66
+[2026-06-13 23:43:55.032] Client: 收到 ACK | Seq=26 | RTT=118.87ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=26 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.048] Client: 收到 ACK | Seq=27 | RTT=115.09ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=27 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.067] Client: 收到 ACK | Seq=28 | RTT=108.73ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=28 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.374] Client: 超时重传 | base=29 | next_seq=31
+[2026-06-13 23:43:55.374] Client: 重传 | Seq=29 | StudentID=20788 | MsgType=2 | SeqNum=29 | AckNum=0 | DataLen=55 | Flags=0 | D*55
+[2026-06-13 23:43:55.376] Client: 重传 | Seq=30 | StudentID=20788 | MsgType=2 | SeqNum=30 | AckNum=0 | DataLen=66 | Flags=0 | D*66
+[2026-06-13 23:43:55.384] Client: 收到 ACK | Seq=29 | RTT=8.08ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=29 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.408] Client: 收到 ACK | Seq=30 | RTT=31.25ms | 确认报文: StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=30 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.409] Client: 发送完成

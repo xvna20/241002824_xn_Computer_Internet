@@ -3,21 +3,41 @@ import struct
 import random
 import sys
 import os
+import time
 from datetime import datetime
 
 # 获取脚本自身所在目录，确保日志写入共享文件夹
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_FILE = os.path.join(BASE_DIR, "run_log.txt")
+LOCK_FILE = os.path.join(BASE_DIR, "run_log.lock")
 
 def write_log(info):
-    t = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"[{t}] {info}\n")
+    deadline = time.time() + 3
+    while True:
+        try:
+            fd = os.open(LOCK_FILE, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            os.close(fd)
+            break
+        except FileExistsError:
+            if time.time() > deadline:
+                try:
+                    os.remove(LOCK_FILE)
+                except FileNotFoundError:
+                    pass
+                deadline = time.time() + 3
+            else:
+                time.sleep(0.005)
+    try:
+        t = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+        with open(LOG_FILE, "a", encoding="utf-8") as f:
+            f.write(f"[{t}]client:{info}\n")
+    finally:
+        os.remove(LOCK_FILE)
 
 def main():
     if len(sys.argv) != 6:
         print("用法: python reversetcpclient.py IP PORT LMIN LMAX SEED")
-        print("示例: python reversetcpclient.py 127.0.0.1 8888 30 100 1")
+        print("示例: python reversetcpclient.py 127.0.0.1 9999 30 100 1")
         return
     host = sys.argv[1]
     port = int(sys.argv[2])
@@ -48,15 +68,15 @@ def main():
     N = len(chunk_list)
     write_log(f"总文件字节:{total_len},分块数量N={N},各块长度:{chunk_list}")
 
-    # 连接服务端
+    #连接服务端
     cli = socket.socket()
     cli.connect((host, port))
-    write_log(f"客户端连接 {host}:{port}, Lmin={Lmin},Lmax={Lmax},seed={seed},总块N={N}")
+    write_log(f"客户端连接{host}:{port},Lmin={Lmin},Lmax={Lmax},seed={seed},总块N={N}")
 
     # 发送初始化报文：Type=1 + 总块数N
     init_pkg = struct.pack(">HI", 1, N)
     cli.sendall(init_pkg)
-    write_log(f"发送初始化报文Type=1, N={N}")
+    write_log(f"发送初始化报文Type=1,N={N}")
 
     # 接收服务端同意报文 Type=2
     agree_buf = cli.recv(2)
@@ -90,7 +110,7 @@ def main():
     # 写入最终反转结果文件
     with open("result_rev.txt", "w", encoding="ascii") as f:
         f.write(all_rev_data.decode("ascii"))
-    write_log("全部数据接收完成，已生成result_rev.txt完整反转文件+++Client\n")
+    write_log("全部数据接收完成，已生成result_rev.txt完整反转文件\n")
     cli.close()
 
 if __name__ == "__main__":

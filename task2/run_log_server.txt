@@ -1,0 +1,92 @@
+[2026-06-13 23:43:35.856] Server: 服务端启动，监听 0.0.0.0:9999，丢包率 10%
+[2026-06-13 23:43:53.473] Server: 客户端连接成功 | 学号后4位: 2824
+[2026-06-13 23:43:53.480] Server: 收到 ACK，三次握手完成 | StudentID=20788 | MsgType=1 | SeqNum=1 | AckNum=1 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.484] Server: 模拟丢包 | seq_num=5 | 来自 ('192.168.78.1', 61814)
+[2026-06-13 23:43:53.485] Server: 收到数据 | 序列号=1 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=1 | AckNum=0 | DataLen=56 | Flags=0 | D*56
+[2026-06-13 23:43:53.500] Server: 累积确认 | ACK=1 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=1 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.515] Server: 收到数据 | 序列号=2 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=2 | AckNum=0 | DataLen=50 | Flags=0 | D*50
+[2026-06-13 23:43:53.526] Server: 累积确认 | ACK=2 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=2 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.538] Server: 收到数据 | 序列号=3 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=3 | AckNum=0 | DataLen=79 | Flags=0 | D*79
+[2026-06-13 23:43:53.532] Server: 模拟丢包 | seq_num=7 | 来自 ('192.168.78.1', 61814)
+[2026-06-13 23:43:53.551] Server: 累积确认 | ACK=3 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=3 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.587] Server: 收到数据 | 序列号=4 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=4 | AckNum=0 | DataLen=47 | Flags=0 | D*47
+[2026-06-13 23:43:53.593] Server: 累积确认 | ACK=4 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=4 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.603] Server: 收到数据 | 序列号=6 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=6 | AckNum=0 | DataLen=76 | Flags=0 | D*76
+[2026-06-13 23:43:53.615] Server: 乱序，重复确认 | ACK=4 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=4 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.623] Server: 收到数据 | 序列号=8 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=8 | AckNum=0 | DataLen=58 | Flags=0 | D*58
+[2026-06-13 23:43:53.631] Server: 乱序，重复确认 | ACK=4 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=4 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.638] Server: 收到数据 | 序列号=9 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=9 | AckNum=0 | DataLen=79 | Flags=0 | D*79
+[2026-06-13 23:43:53.644] Server: 乱序，重复确认 | ACK=4 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=4 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.900] Server: 模拟丢包 | seq_num=5 | 来自 ('192.168.78.1', 61814)
+[2026-06-13 23:43:53.906] Server: 收到数据 | 序列号=6 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=6 | AckNum=0 | DataLen=76 | Flags=0 | D*76
+[2026-06-13 23:43:53.916] Server: 乱序，重复确认 | ACK=4 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=4 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.925] Server: 收到数据 | 序列号=7 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=7 | AckNum=0 | DataLen=63 | Flags=0 | D*63
+[2026-06-13 23:43:53.939] Server: 乱序，重复确认 | ACK=4 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=4 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.957] Server: 收到数据 | 序列号=8 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=8 | AckNum=0 | DataLen=58 | Flags=0 | D*58
+[2026-06-13 23:43:53.970] Server: 乱序，重复确认 | ACK=4 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=4 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:53.979] Server: 收到数据 | 序列号=9 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=9 | AckNum=0 | DataLen=79 | Flags=0 | D*79
+[2026-06-13 23:43:53.988] Server: 乱序，重复确认 | ACK=4 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=4 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.219] Server: 收到数据 | 序列号=5 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=5 | AckNum=0 | DataLen=65 | Flags=0 | D*65
+[2026-06-13 23:43:54.233] Server: 累积确认 | ACK=5 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=5 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.247] Server: 收到数据 | 序列号=6 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=6 | AckNum=0 | DataLen=76 | Flags=0 | D*76
+[2026-06-13 23:43:54.268] Server: 累积确认 | ACK=6 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=6 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.279] Server: 收到数据 | 序列号=7 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=7 | AckNum=0 | DataLen=63 | Flags=0 | D*63
+[2026-06-13 23:43:54.285] Server: 累积确认 | ACK=7 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=7 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.291] Server: 收到数据 | 序列号=8 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=8 | AckNum=0 | DataLen=58 | Flags=0 | D*58
+[2026-06-13 23:43:54.298] Server: 累积确认 | ACK=8 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=8 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.308] Server: 收到数据 | 序列号=9 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=9 | AckNum=0 | DataLen=79 | Flags=0 | D*79
+[2026-06-13 23:43:54.316] Server: 累积确认 | ACK=9 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=9 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.322] Server: 模拟丢包 | seq_num=14 | 来自 ('192.168.78.1', 61814)
+[2026-06-13 23:43:54.325] Server: 收到数据 | 序列号=10 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=10 | AckNum=0 | DataLen=60 | Flags=0 | D*60
+[2026-06-13 23:43:54.360] Server: 累积确认 | ACK=10 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=10 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.371] Server: 收到数据 | 序列号=11 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=11 | AckNum=0 | DataLen=51 | Flags=0 | D*51
+[2026-06-13 23:43:54.388] Server: 累积确认 | ACK=11 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=11 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.396] Server: 收到数据 | 序列号=12 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=12 | AckNum=0 | DataLen=47 | Flags=0 | D*47
+[2026-06-13 23:43:54.399] Server: 累积确认 | ACK=12 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=12 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.410] Server: 收到数据 | 序列号=13 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=13 | AckNum=0 | DataLen=51 | Flags=0 | D*51
+[2026-06-13 23:43:54.418] Server: 累积确认 | ACK=13 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=13 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.426] Server: 收到数据 | 序列号=15 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=15 | AckNum=0 | DataLen=50 | Flags=0 | D*50
+[2026-06-13 23:43:54.432] Server: 乱序，重复确认 | ACK=13 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=13 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.441] Server: 收到数据 | 序列号=16 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=16 | AckNum=0 | DataLen=68 | Flags=0 | D*68
+[2026-06-13 23:43:54.452] Server: 乱序，重复确认 | ACK=13 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=13 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.461] Server: 收到数据 | 序列号=17 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=17 | AckNum=0 | DataLen=76 | Flags=0 | D*76
+[2026-06-13 23:43:54.470] Server: 乱序，重复确认 | ACK=13 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=13 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.474] Server: 收到数据 | 序列号=18 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=18 | AckNum=0 | DataLen=68 | Flags=0 | D*68
+[2026-06-13 23:43:54.491] Server: 乱序，重复确认 | ACK=13 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=13 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.738] Server: 收到数据 | 序列号=14 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=14 | AckNum=0 | DataLen=42 | Flags=0 | D*42
+[2026-06-13 23:43:54.744] Server: 累积确认 | ACK=14 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=14 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.750] Server: 收到数据 | 序列号=15 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=15 | AckNum=0 | DataLen=50 | Flags=0 | D*50
+[2026-06-13 23:43:54.773] Server: 累积确认 | ACK=15 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=15 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.781] Server: 收到数据 | 序列号=16 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=16 | AckNum=0 | DataLen=68 | Flags=0 | D*68
+[2026-06-13 23:43:54.794] Server: 累积确认 | ACK=16 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=16 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.807] Server: 收到数据 | 序列号=17 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=17 | AckNum=0 | DataLen=76 | Flags=0 | D*76
+[2026-06-13 23:43:54.818] Server: 累积确认 | ACK=17 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=17 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.830] Server: 收到数据 | 序列号=18 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=18 | AckNum=0 | DataLen=68 | Flags=0 | D*68
+[2026-06-13 23:43:54.843] Server: 累积确认 | ACK=18 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=18 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.852] Server: 收到数据 | 序列号=19 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=19 | AckNum=0 | DataLen=70 | Flags=0 | D*70
+[2026-06-13 23:43:54.861] Server: 累积确认 | ACK=19 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=19 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.870] Server: 收到数据 | 序列号=20 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=20 | AckNum=0 | DataLen=40 | Flags=0 | D*40
+[2026-06-13 23:43:54.883] Server: 累积确认 | ACK=20 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=20 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.901] Server: 收到数据 | 序列号=21 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=21 | AckNum=0 | DataLen=43 | Flags=0 | D*43
+[2026-06-13 23:43:54.909] Server: 累积确认 | ACK=21 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=21 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.919] Server: 收到数据 | 序列号=22 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=22 | AckNum=0 | DataLen=42 | Flags=0 | D*42
+[2026-06-13 23:43:54.929] Server: 累积确认 | ACK=22 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=22 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.941] Server: 收到数据 | 序列号=23 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=23 | AckNum=0 | DataLen=55 | Flags=0 | D*55
+[2026-06-13 23:43:54.955] Server: 累积确认 | ACK=23 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=23 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.970] Server: 收到数据 | 序列号=24 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=24 | AckNum=0 | DataLen=79 | Flags=0 | D*79
+[2026-06-13 23:43:54.977] Server: 累积确认 | ACK=24 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=24 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:54.984] Server: 模拟丢包 | seq_num=29 | 来自 ('192.168.78.1', 61814)
+[2026-06-13 23:43:54.989] Server: 收到数据 | 序列号=25 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=25 | AckNum=0 | DataLen=48 | Flags=0 | D*48
+[2026-06-13 23:43:55.008] Server: 累积确认 | ACK=25 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=25 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.023] Server: 收到数据 | 序列号=26 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=26 | AckNum=0 | DataLen=48 | Flags=0 | D*48
+[2026-06-13 23:43:55.032] Server: 累积确认 | ACK=26 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=26 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.040] Server: 收到数据 | 序列号=27 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=27 | AckNum=0 | DataLen=53 | Flags=0 | D*53
+[2026-06-13 23:43:55.048] Server: 累积确认 | ACK=27 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=27 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.058] Server: 收到数据 | 序列号=28 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=28 | AckNum=0 | DataLen=73 | Flags=0 | D*73
+[2026-06-13 23:43:55.067] Server: 累积确认 | ACK=28 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=28 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.073] Server: 收到数据 | 序列号=30 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=30 | AckNum=0 | DataLen=66 | Flags=0 | D*66
+[2026-06-13 23:43:55.079] Server: 乱序，重复确认 | ACK=28 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=28 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.376] Server: 收到数据 | 序列号=29 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=29 | AckNum=0 | DataLen=55 | Flags=0 | D*55
+[2026-06-13 23:43:55.383] Server: 累积确认 | ACK=29 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=29 | DataLen=0 | Flags=ACK
+[2026-06-13 23:43:55.396] Server: 收到数据 | 序列号=30 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=2 | SeqNum=30 | AckNum=0 | DataLen=66 | Flags=0 | D*66
+[2026-06-13 23:43:55.405] Server: 累积确认 | ACK=30 | 来自 ('192.168.78.1', 61814) | StudentID=20788 | MsgType=3 | SeqNum=0 | AckNum=30 | DataLen=0 | Flags=ACK
